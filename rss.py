@@ -1,8 +1,25 @@
 import feedparser
-import pandas as pd
+import json
 
-links = ["http://www.reddit.com/r/learnphyton+Python+learnprogramming+programming+swift.rss",
-         "https://www.china-files.com/feed/", "https://agfundernews.com/feed", "https://www.coindesk.com/feed"]
+added_urls = ["http://www.reddit.com/r/learnphyton+Python+learnprogramming+programming+swift",
+              "https://www.china-files.com/feed/", "https://agfundernews.com/feed", "https://www.coindesk.com/feed"]
+links = []
+# http://www.reddit.com/r/``{SUBREDDIT_NAME}``/new/.rss?sort=new
+for urls in added_urls:
+    if urls.startswith('http://www.reddit.com/'):
+        user = input("[N]ew or [H]ot: ")
+        if user == 'n':
+            new = urls + '/new/.rss?sort=new'
+            print(new)
+            links.append(new)
+        elif user == 'h':
+            hot = urls + '/hot/.rss?sort=hot'
+            print(hot)
+            links.append(hot)
+    else:
+        links.append(urls)
+
+print(links)
 
 
 class RSSFeed:
@@ -31,30 +48,6 @@ for link in links:
             else:
                 topics_dict["title"].append(keys)
 
-topics = pd.DataFrame(topics_dict)
-print(topics)
-topics.to_csv('Reddit.csv', index=False)
-# file = [
-#     {
-#         "source": "reddit",
-#         "feeds": [
-#             {
-#                 "title": "avffa",
-#                 "url": "www.ciao.it"},
-#             {
-#                 "title": "gfafa",
-#                 "url": "www.fafa.it"},
-#         ]
-#     },
-#     {
-#         "source": "twitter",
-#         "feeds": [
-#             {
-#                 "title": "avffa",
-#                 "url": "www.ciao.it"},
-#             {
-#                 "title": "gfafa",
-#                 "url": "www.fafa.it"},
-#         ]
-#     }
-# ]
+new_data = [{"title": i, "url": b} for i, b in zip(topics_dict["title"], topics_dict["url"])]
+files = json.dumps(new_data, indent=3)
+print(files)

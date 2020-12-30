@@ -10,7 +10,7 @@ app = Flask(__name__)
 # def index():
 #     return '<h1>Hello world!</h1>'
 def hello():
-    return render_template('home.html', feed_dict=feed_dict)
+    return render_template('template.html', feed_dict=feed_dict)
 
 if __name__ == '__main__':
     app.run(debug=True)

@@ -43,5 +43,5 @@ for link in links:
 
 new_data = [{"title": t, "date": u, "url": i} for t, u, i in
             zip(topics_dict["title"], topics_dict["date"], topics_dict["url"])]
-files = json.dump(new_data, indent=3)
-print(files)
+# files = json.dump(new_data, indent=3)
+# print(files)

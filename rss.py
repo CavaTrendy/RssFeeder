@@ -25,6 +25,7 @@ class RSSFeed:
 
 
 topics_dict = {"title": [],
+               # "summary": [],
                "date": [],
                "url": []
                }

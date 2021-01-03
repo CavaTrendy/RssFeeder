@@ -5,6 +5,7 @@ import re
 
 links = added_urls
 
+
 #######CLASS METHOD TRY##################
 # class RSSFeed:
 #     def __init__(self, urls):
@@ -48,19 +49,20 @@ def feed():
         feed_entries = rss_feed.entries
         fedds_articles = []
         sourcerex = re.match("https?://([A-Za-z_0-9.-]+).", urls)
-        source  = sourcerex[0]
+        source = sourcerex[0]
 
         for entry in feed_entries:
             header = entry.title
             link = entry.link
             try:
-                date= entry.published
+                date = entry.published
             except KeyError:
                 print("no pubDate")
 
-            feeds = {"source" : source, "header": header,  "link": link, "date": date}
+            feeds = {"source": source, "header": header, "link": link, "date": date}
             fedds_articles.append(feeds)
     return fedds_articles
+
 
 a = feed()
 
@@ -69,4 +71,3 @@ a = feed()
 #             zip(topics_dict["title"], topics_dict["date"], topics_dict["url"])]
 with open("static/feeds.json", "w") as write_file:
     json.dump(a, write_file, indent=3, separators=(", ", ": "), sort_keys=True)
-

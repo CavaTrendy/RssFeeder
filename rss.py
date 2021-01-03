@@ -1,6 +1,6 @@
 import feedparser
 import json
-from added_urls import added_urls
+from url_check import added_urls
 import re
 
 links = added_urls

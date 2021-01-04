@@ -1,6 +1,10 @@
+from datetime import datetime, timedelta
+import time
 import feedparser
+import pytz
+import configparser
 
-urls = ["https://www.cryptohackers.party/feed/rss/", "https://cointelegraph.com/rss", "https://cointelegraph.com/editors_pick_rss"
+urls = ["https://www.cryptohackers.party/feed/rss/", "https://cointelegraph.com/rss", "https://cointelegraph.com/editors_pick_rss",
         "https://www.coindesk.com/feed/rss", "https://www.ccn.com/feed/",
         "https://www.nakamotoinstitute.org/mempool/feed/",
         "https://www.china-files.com/feed/rss", "https://agfundernews.com/feed/rss"]
@@ -65,6 +69,9 @@ for feed_url in urls:
             print('%i new entries' % len(entries))
         else:
             print('there are no entries')
+    else:
+
+            added_urls.append(feed_url)
 
 print(urls)
 print(added_urls)

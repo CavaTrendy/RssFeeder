@@ -70,4 +70,4 @@ a = feed()
 # new_data = [{"title": t, "date": u, "url": i} for t, u, i in
 #             zip(topics_dict["title"], topics_dict["date"], topics_dict["url"])]
 with open("static/feeds.json", "w") as write_file:
-    json.dump(a, write_file, indent=3, separators=(", ", ": "), sort_keys=True)
+    json.dump(a, write_file, indent=4, separators=(", ", ": "), sort_keys=True)

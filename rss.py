@@ -87,9 +87,9 @@ for urls in links:
             feeds["source"].append(feed_channel.title)
 
         except KeyError:
-            feeds["source"].append("need method")
+            feeds["source"].append(urls)
         except AttributeError:
-            feeds["source"].append("need method")
+            feeds["source"].append(urls)
             print("boh" + urls)
         i +=1
 

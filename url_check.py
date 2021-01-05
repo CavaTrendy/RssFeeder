@@ -8,8 +8,7 @@ urls = ["https://www.cryptohackers.party/feed/rss/", "https://cointelegraph.com/
         "https://www.coindesk.com/feed/rss", "https://www.ccn.com/feed/",
         "https://www.nakamotoinstitute.org/mempool/feed/",
         "https://www.china-files.com/feed/rss", "https://agfundernews.com/feed/rss"]
-# added_urls = []
-#
+
 # #### NOT ALWAYS VALID ###
 # def feed_modified_date(feed):
 #     # this is the last-modified value in the response header

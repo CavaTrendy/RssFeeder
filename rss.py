@@ -72,18 +72,16 @@ links = urls
 # a = feed()
 
 # print(a)
-
+feeds = {"source": [], "title": [], "link": [], "date": []}
 for urls in links:
     print("Analyzing " + urls)
     rss_feed = feedparser.parse(urls)
     feed_entries = rss_feed.entries
     feed_title = rss_feed.channel
-    feeds = {"source": [], "title": [], "link": [], "date": []}
-    for sources in feed_title:
-        try:
-            feeds["source"].append(sources.title)
-        except KeyError:
-            feeds["source"].append("need method")
+    try:
+        feeds["source"].append(feed_title.title)
+    except KeyError:
+        feeds["source"].append("need method")
     for entry in feed_entries:
         feeds["title"].append(entry.title)
         feeds["link"].append(entry.link)
@@ -92,10 +90,11 @@ for urls in links:
         except KeyError:
             print("no pubDate")
 
+print(feeds)
 
-# print(feeds)
+# new_data = [{"source": s, "title": t,  "link": l, "date": d,} for s, t, l, d in
+#             zip(feeds["source"], feeds["title"], feeds["link"], feeds["date"])]
+# with open("static/feeds.json", "w") as write_file:
+#     json.dump(feeds, write_file, indent=4)
+    # separators=(", ", ": "), sort_keys=True)
 
-new_data = [{"source": s, "title": t,  "link": l, "date": d,} for s, t, l, d in
-            zip(feeds["source"], feeds["title"], feeds["link"], feeds["date"])]
-with open("static/feeds.json", "w") as write_file:
-    json.dump(new_data, write_file, indent=3, separators=(", ", ": "), sort_keys=True)

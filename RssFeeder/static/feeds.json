@@ -1,6 +1,48 @@
 [
      {
           "source": "https://www.cryptohackers.party/feed/rss/",
+          "title": "Law Decoded: Insurrections, transitions, monitoring transactions and 2021, Jan. 1\u20138",
+          "link": "https://cointelegraph.com/news/law-decoded-insurrections-transitions-monitoring-transactions-and-2021-jan-1-8",
+          "date": "Fri, 08 Jan 2021 20:18:54 "
+     },
+     {
+          "source": "Cointelegraph.com News",
+          "title": "Price analysis 1/8: BTC, ETH, XRP, LTC, ADA, DOT, BCH, XLM, LINK, BNB",
+          "link": "https://cointelegraph.com/news/price-analysis-1-8-btc-eth-xrp-ltc-ada-dot-bch-xlm-link-bnb",
+          "date": "Fri, 08 Jan 2021 20:15:00 "
+     },
+     {
+          "source": "Cointelegraph.com News",
+          "title": "Pension funds are getting in on Bitcoin, according to Grayscale",
+          "link": "https://cointelegraph.com/news/pension-funds-are-getting-in-on-bitcoin-according-to-grayscale",
+          "date": "Fri, 08 Jan 2021 19:30:00 "
+     },
+     {
+          "source": "Cointelegraph.com News",
+          "title": "DeFi integration and layer-2 tech back Matic Network\u2019s (MATIC) 92% rally",
+          "link": "https://cointelegraph.com/news/defi-integration-and-layer-2-tech-back-matic-network-s-matic-92-rally",
+          "date": "Fri, 08 Jan 2021 18:20:00 "
+     },
+     {
+          "source": "Cointelegraph.com News",
+          "title": "Bitcoin bull run could end if institutions go under, Komodo exec speculates",
+          "link": "https://cointelegraph.com/news/bitcoin-bull-run-could-end-if-institutions-go-under-komodo-exec-speculates",
+          "date": "Fri, 08 Jan 2021 18:04:20 "
+     },
+     {
+          "source": "Cointelegraph.com News",
+          "title": "Warp Finance adds Chainlink oracles to protect against flash loans",
+          "link": "https://cointelegraph.com/news/warp-finance-adds-chainlink-oracles-to-protect-against-flash-loans",
+          "date": "Fri, 08 Jan 2021 18:00:00 "
+     },
+     {
+          "source": "Cointelegraph.com News",
+          "title": "As gold crashes, Jim Cramer says money is \u2018all going to crypto\u2019",
+          "link": "https://cointelegraph.com/news/as-gold-crashes-jim-cramer-says-money-is-all-going-to-crypto",
+          "date": "Fri, 08 Jan 2021 17:05:55 "
+     },
+     {
+          "source": "Cointelegraph.com News",
           "title": "The rise of crypto: Bitcoin sets landmarks but alts can go independent",
           "link": "https://cointelegraph.com/news/the-rise-of-crypto-bitcoin-sets-landmarks-but-alts-can-go-independent",
           "date": "Fri, 08 Jan 2021 14:31:37 "
@@ -37,7 +79,7 @@
      },
      {
           "source": "Cointelegraph.com News",
-          "title": "Bitcoin buying algos 'seldom care about price' in 2021, says analyst",
+          "title": "Bitcoin-buying algos 'seldom care about price' in 2021, says analyst",
           "link": "https://cointelegraph.com/news/bitcoin-buying-algos-seldom-care-about-price-in-2021-says-analyst",
           "date": "Fri, 08 Jan 2021 09:00:00 "
      },
@@ -79,7 +121,7 @@
      },
      {
           "source": "Cointelegraph.com News",
-          "title": "Bitcoin is now worth more than a 20 ounce gold bar",
+          "title": "Bitcoin is now worth more than a 20-ounce gold bar",
           "link": "https://cointelegraph.com/news/bitcoin-is-now-worth-more-than-a-20-ounce-gold-bar",
           "date": "Fri, 08 Jan 2021 02:25:07 "
      },
@@ -139,51 +181,9 @@
      },
      {
           "source": "Cointelegraph.com News",
-          "title": "Bitcoin price hits $40,000 less than three weeks after shattering $20K",
-          "link": "https://cointelegraph.com/news/bitcoin-price-hits-40-000-less-than-three-weeks-after-shattering-20k",
-          "date": "Thu, 07 Jan 2021 18:11:12 "
-     },
-     {
-          "source": "Cointelegraph.com News",
-          "title": "Zuckerberg blocks Trump from Facebook until at least end of term",
-          "link": "https://cointelegraph.com/news/zuckerberg-blocks-trump-from-facebook-until-at-least-end-of-term",
-          "date": "Thu, 07 Jan 2021 18:02:13 "
-     },
-     {
-          "source": "Cointelegraph.com News",
-          "title": "Social networks and the digital economy: A preview of IMVU\u2019s VCOIN",
-          "link": "https://cointelegraph.com/news/social-networks-and-the-digital-economy-a-preview-of-imvu-s-vcoin",
-          "date": "Thu, 07 Jan 2021 16:41:10 "
-     },
-     {
-          "source": "Cointelegraph.com News",
-          "title": "3 reasons analysts say Ethereum may replicate Bitcoin's 2016 bull run",
-          "link": "https://cointelegraph.com/news/3-reasons-analysts-say-ethereum-may-replicate-bitcoin-s-2016-bull-run",
-          "date": "Thu, 07 Jan 2021 16:00:00 "
-     },
-     {
-          "source": "Cointelegraph.com News",
-          "title": "Warp speed to $2,000? Watch these levels as Ethereum nears all-time high",
-          "link": "https://cointelegraph.com/news/2-000-eth-or-bust-key-levels-to-watch-as-ethereum-looks-to-break-its-all-time-high",
-          "date": "Thu, 07 Jan 2021 14:26:12 "
-     },
-     {
-          "source": "Cointelegraph.com News",
-          "title": "South Korea to introduce a 20% tax on crypto trading profits in 2023",
-          "link": "https://cointelegraph.com/news/south-korea-to-introduce-a-20-tax-on-crypto-trading-profits-in-2023",
-          "date": "Thu, 07 Jan 2021 13:45:33 "
-     },
-     {
-          "source": "Cointelegraph.com News",
-          "title": "XRP price soars 55% to 'crucial' level as Bitcoin notches new high at $38.5K",
-          "link": "https://cointelegraph.com/news/xrp-price-soars-55-to-crucial-level-as-bitcoin-notches-new-high-at-38-5k",
-          "date": "Thu, 07 Jan 2021 13:44:16 "
-     },
-     {
-          "source": "Cointelegraph.com News",
-          "title": "Bitcoin price quickly rebounds to reach $41,000 as market cap passes Tencent",
-          "link": "https://cointelegraph.com/news/bitcoin-price-quickly-rebounds-to-reach-41-000-as-market-cap-passes-tencent",
-          "date": "Fri, 08 Jan 2021 11:02:58 "
+          "title": "Price analysis 1/8: BTC, ETH, XRP, LTC, ADA, DOT, BCH, XLM, LINK, BNB",
+          "link": "https://cointelegraph.com/news/price-analysis-1-8-btc-eth-xrp-ltc-ada-dot-bch-xlm-link-bnb",
+          "date": "Fri, 08 Jan 2021 20:15:00 "
      },
      {
           "source": "Cointelegraph.com News",
@@ -199,30 +199,108 @@
      },
      {
           "source": "Cointelegraph.com News",
-          "title": "Kenyan crypto firms on notice as digital tax law takes effect",
-          "link": "https://cointelegraph.com/news/kenyan-crypto-firms-on-notice-as-digital-tax-law-takes-effect",
-          "date": "Fri, 08 Jan 2021 09:33:36 "
+          "title": "DeFi integration and layer-2 tech back Matic Network\u2019s (MATIC) 92% rally",
+          "link": "https://cointelegraph.com/news/defi-integration-and-layer-2-tech-back-matic-network-s-matic-92-rally",
+          "date": "Fri, 08 Jan 2021 18:20:00 "
      },
      {
           "source": "Cointelegraph.com News",
-          "title": "Judge reverses own \u2018mistaken\u2019 dismissal of Overstock lawsuit",
-          "link": "https://cointelegraph.com/news/judge-reverses-own-mistaken-dismissal-of-overstock-lawsuit",
-          "date": "Fri, 08 Jan 2021 07:47:55 "
+          "title": "Law Decoded: Insurrections, transitions, monitoring transactions and 2021, Jan. 1\u20138",
+          "link": "https://cointelegraph.com/news/law-decoded-insurrections-transitions-monitoring-transactions-and-2021-jan-1-8",
+          "date": "Fri, 08 Jan 2021 20:18:54 "
      },
      {
           "source": "Cointelegraph.com News",
+          "title": "Market Wrap: Bitcoin Crosses $41.9K as Ether Futures Interest Grows 85% So Far in 2021",
+          "link": "https://www.coindesk.com/market-wrap-bitcoin-crosses-41-9-ether-futures-interest-grows",
+          "date": "Fri, 08 Jan 2021 21:35:09 "
+     },
+     {
+          "source": "Cointelegraph.com News",
+          "title": "The Smart Way to Talk About DeFi\u2019s $22B",
+          "link": "https://www.coindesk.com/the-smart-way-to-talk-about-defis-22b",
+          "date": "Fri, 08 Jan 2021 21:05:04 "
+     },
+     {
+          "source": "Cointelegraph.com News",
+          "title": "Asia\u2019s Retail FOMO Could Be Behind XRP\u2019s Rally Despite SEC\u2019s Lawsuit",
+          "link": "https://www.coindesk.com/xrp-asia-retail-fomo-rally",
+          "date": "Fri, 08 Jan 2021 21:02:52 "
+     },
+     {
+          "source": "CoinDesk",
+          "title": "BRRR: Biden Readies a New $3T Stimulus Package",
+          "link": "https://www.coindesk.com/podcasts/late-confirmation/biden-new-stimulus-bitcoin",
+          "date": "Fri, 08 Jan 2021 20:00:56 "
+     },
+     {
+          "source": "CoinDesk",
+          "title": "Square Crypto Funds Bitcoin Developer to Improve Mining Pool Software",
+          "link": "https://www.coindesk.com/square-crypto-funds-bitcoin-developer-mining-pool-software",
+          "date": "Fri, 08 Jan 2021 19:38:05 "
+     },
+     {
+          "source": "CoinDesk",
+          "title": "Bitcoin Is \u2018Less Risky the Higher It Goes,\u2019 Says Investor Bill Miller on CNBC",
+          "link": "https://www.coindesk.com/bitcoin-bill-miller-cnbc-volatility-risk",
+          "date": "Fri, 08 Jan 2021 18:54:18 "
+     },
+     {
+          "source": "CoinDesk",
+          "title": "Money Reimagined: Bitcoin\u2019s Road to Gold",
+          "link": "https://www.coindesk.com/money-reimagined-bitcoins-road-to-gold",
+          "date": "Fri, 08 Jan 2021 18:27:40 "
+     },
+     {
+          "source": "CoinDesk",
+          "title": "Blockchain Bites: Bitcoin\u2019s Rich List, Coinbase\u2019s Latest Acquisition",
+          "link": "https://www.coindesk.com/blockchain-bites-bitcoin-rich-list-coinbase",
+          "date": "Fri, 08 Jan 2021 18:21:19 "
+     },
+     {
+          "source": "CoinDesk",
+          "title": "Charity\u2019s Centralization Problem, Feat. Matthew Davie and Alpen Sheth",
+          "link": "https://www.coindesk.com/podcasts/coindesk-reports/charity-centralization-blockchain",
+          "date": "Fri, 08 Jan 2021 17:30:33 "
+     },
+     {
+          "source": "CoinDesk",
+          "title": "Bitcoin News Roundup for Jan. 8, 2021",
+          "link": "https://www.coindesk.com/podcasts/markets-daily/bitcoin-news-roundup-jan-8-2021",
+          "date": "Fri, 08 Jan 2021 17:00:02 "
+     },
+     {
+          "source": "CoinDesk",
+          "title": "Cryptocurrency Miner Hive Blockchain Passes $1B Market Value",
+          "link": "https://www.coindesk.com/hive-blockchain-1-billion-market-cap-bitcoin-mining",
+          "date": "Fri, 08 Jan 2021 16:38:32 "
+     },
+     {
+          "source": "CoinDesk",
+          "title": "Bitcoin\u2019s Market Value Now Exceeds That of Facebook",
+          "link": "https://www.coindesk.com/bitcoin-market-value-facebook",
+          "date": "Fri, 08 Jan 2021 16:34:33 "
+     },
+     {
+          "source": "CoinDesk",
+          "title": "Ethereum 2.0 Explained in 4 Easy Metrics",
+          "link": "https://www.coindesk.com/ethereum-2-0-explained-in-4-easy-metrics",
+          "date": "Fri, 08 Jan 2021 16:29:31 "
+     },
+     {
+          "source": "CoinDesk",
           "title": "Kyrgyzstan Has Proposed Its First Regulatory Framework for Crypto",
           "link": "https://www.coindesk.com/kyrgyzstan-regulate-crypto-exchanges-ban-crypto-for-payments",
           "date": "Fri, 08 Jan 2021 14:45:01 "
      },
      {
-          "source": "Cointelegraph.com News",
+          "source": "CoinDesk",
           "title": "First Mover: It Might Be Getting \u2018Silly\u2019 as Bitcoin Passes $39K, $40K, $41K",
           "link": "https://www.coindesk.com/first-mover-it-might-be-getting-silly-bitcoin-41k",
           "date": "Fri, 08 Jan 2021 14:05:02 "
      },
      {
-          "source": "Cointelegraph.com News",
+          "source": "CoinDesk",
           "title": "Internet Shutdowns Cost India $2.8B in 2020: Report",
           "link": "https://www.coindesk.com/internet-shutdowns-cost-india-2-8b-in-2020-report",
           "date": "Fri, 08 Jan 2021 13:30:00 "
@@ -250,84 +328,6 @@
           "title": "Tron-Owned Video Platform Criticized for Hosting Extremists, US Capitol Rioters",
           "link": "https://www.coindesk.com/tron-owned-video-platform-criticized-for-hosting-extremists-u-s-capitol-rioters",
           "date": "Fri, 08 Jan 2021 10:38:57 "
-     },
-     {
-          "source": "CoinDesk",
-          "title": "US Judge U-Turns on Ruling in Overstock Digital Dividend Lawsuit",
-          "link": "https://www.coindesk.com/us-judge-u-turns-on-ruling-in-overstock-digital-dividend-lawsuit",
-          "date": "Fri, 08 Jan 2021 09:33:25 "
-     },
-     {
-          "source": "CoinDesk",
-          "title": "Crypto Exchange Bakkt Nears Merger With Victory Park SPAC: Bloomberg",
-          "link": "https://www.coindesk.com/crypto-exchange-bakkt-nears-merger-with-victory-park-spac-bloomberg",
-          "date": "Fri, 08 Jan 2021 02:58:04 "
-     },
-     {
-          "source": "CoinDesk",
-          "title": "Why Is Bitcoin Going Up, and Will It Crash Soon? What\u2019s Next as Price Doubles to $40K",
-          "link": "https://www.coindesk.com/why-is-bitcoin-going-up-and-will-it-crash",
-          "date": "Fri, 08 Jan 2021 02:46:44 "
-     },
-     {
-          "source": "CoinDesk",
-          "title": "Ripple \u2018Tried\u2019 to Settle With SEC Ahead of XRP Suit, CEO Says",
-          "link": "https://www.coindesk.com/ripple-tried-to-settle-with-sec-ahead-of-xrp-suit-ceo-says",
-          "date": "Thu, 07 Jan 2021 22:27:00 "
-     },
-     {
-          "source": "CoinDesk",
-          "title": "Bitcoin Goes Institutional, Ethereum Spreads Its Wings: CoinDesk Q4 2020 Review",
-          "link": "https://www.coindesk.com/bitcoin-ethereum-coindesk-q4-2020-review",
-          "date": "Thu, 07 Jan 2021 21:56:17 "
-     },
-     {
-          "source": "CoinDesk",
-          "title": "SoFi to Go Public Through SPAC Merger at $8.6B Valuation",
-          "link": "https://www.coindesk.com/sofi-to-go-public-through-spac-merger-at-8-6b-valuation",
-          "date": "Thu, 07 Jan 2021 21:40:52 "
-     },
-     {
-          "source": "CoinDesk",
-          "title": "Market Wrap: Bitcoin Reaches $40.3K While DeFi Value Locked Inflates to Over $22B",
-          "link": "https://www.coindesk.com/market-wrap-bitcoin-defi-inflates",
-          "date": "Thu, 07 Jan 2021 21:24:26 "
-     },
-     {
-          "source": "CoinDesk",
-          "title": "Bull Run Democracy, Revisited",
-          "link": "https://www.coindesk.com/bull-run-democracy-revisited",
-          "date": "Thu, 07 Jan 2021 20:59:17 "
-     },
-     {
-          "source": "CoinDesk",
-          "title": "Bitcoin Miners See Revenue Per TH/s Nearly Triple in 3 Months",
-          "link": "https://www.coindesk.com/bitcoin-miners-daily-revenue-terahash-hashprice",
-          "date": "Thu, 07 Jan 2021 20:54:18 "
-     },
-     {
-          "source": "CoinDesk",
-          "title": "\u2018Bitcoin Rich List\u2019 Rebounds to Hit All-Time High",
-          "link": "https://www.coindesk.com/bitcoin-rich-list-all-time-high",
-          "date": "Thu, 07 Jan 2021 20:24:52 "
-     },
-     {
-          "source": "CoinDesk",
-          "title": "\u2018Decentralized Court\u2019 Aragon Association Hit With Flurry of Resignations",
-          "link": "https://www.coindesk.com/decentralized-court-aragon-association-hit-with-flurry-of-resignations",
-          "date": "Thu, 07 Jan 2021 20:22:33 "
-     },
-     {
-          "source": "CoinDesk",
-          "title": "Can Bitcoin Just Keep Going Up?",
-          "link": "https://www.coindesk.com/podcasts/late-confirmation/can-bitcoin-just-keep-going-up",
-          "date": "Thu, 07 Jan 2021 20:20:54 "
-     },
-     {
-          "source": "CoinDesk",
-          "title": "Finland Pushes to Sell Tainted Trove of Bitcoins Worth Tens of Millions",
-          "link": "https://www.coindesk.com/finland-pushes-to-sell-tainted-trove-of-bitcoins-worth-tens-of-millions",
-          "date": "Thu, 07 Jan 2021 20:20:30 "
      },
      {
           "source": "CoinDesk",

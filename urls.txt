@@ -1,8 +1,0 @@
-https://www.cryptohackers.part/feed/rss/,
-https://cointelegraph.com/rss,
-https://cointelegraph.com/editors_ick_rss,
-https://www.coindesk.com/eed/rss,,
-https://www.ccn.com/feed/,
-https://www.nakamotoinstitute.org/mempool/feed/,
-https://www.china-files.com/feed/rss, 
-https://agfundernews.com/feed/rss

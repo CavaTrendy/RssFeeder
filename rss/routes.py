@@ -1,7 +1,10 @@
-import os
-import json
-import rss
-from models import Post
+# import os
+# import json
+# import rss
+from flask import  render_template, request
+from rss import app
+from rss.models import Post
+from rss import db
 
 
 

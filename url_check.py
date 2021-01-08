@@ -4,10 +4,16 @@ import feedparser
 import pytz
 import configparser
 
-urls = ["https://www.cryptohackers.party/feed/rss/", "https://cointelegraph.com/rss", "https://cointelegraph.com/editors_pick_rss",
-        "https://www.coindesk.com/feed/rss", "https://www.ccn.com/feed/",
-        "https://www.nakamotoinstitute.org/mempool/feed/",
-        "https://www.china-files.com/feed/rss", "https://agfundernews.com/feed/rss"]
+urls = [
+    "https://www.cryptohackers.party/feed/rss/",
+    "https://cointelegraph.com/rss",
+    "https://cointelegraph.com/editors_pick_rss",
+    "https://www.coindesk.com/feed/rss",
+    "https://www.ccn.com/feed/",
+    "https://www.nakamotoinstitute.org/mempool/feed/",
+    "https://www.china-files.com/feed/rss",
+    "https://agfundernews.com/feed/rss",
+]
 
 # #### NOT ALWAYS VALID ###
 # def feed_modified_date(feed):
@@ -72,5 +78,3 @@ urls = ["https://www.cryptohackers.party/feed/rss/", "https://cointelegraph.com/
 #
 #             added_urls.append(feed_url)
 #
-# print(urls)
-# print(added_urls)

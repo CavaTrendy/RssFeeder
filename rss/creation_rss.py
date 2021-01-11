@@ -1,6 +1,6 @@
 import feedparser
 import json
-from url_check import urls
+from rss.url_check import urls
 
 
 links = urls

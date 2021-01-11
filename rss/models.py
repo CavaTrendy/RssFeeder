@@ -1,4 +1,4 @@
-from main import db
+from rss.__int__ import db
 from datetime import datetime
 
 class Post (db.Model):

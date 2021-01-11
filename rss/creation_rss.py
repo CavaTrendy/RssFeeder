@@ -1,7 +1,7 @@
 import feedparser
 import json
 from url_check import urls
-import re
+
 
 links = urls
 
@@ -111,6 +111,8 @@ for urls in links:
 # a= json.dumps(feeds,indent= 4, separators=(", ", ": "), sort_keys=True)
 new_data = [{"source": s,"title": t,"link": l,"date": d} for s, t, l, d in zip(feeds["source"], feeds["title"], feeds["link"], feeds["date"])]
 
-with open("static/feeds.json", "w") as write_file:
-    json.dump(new_data, write_file, indent=5)
+rss_data = json.dumps(new_data, indent=5)
+print(rss_data)
+# with open("static/feeds.json", "w") as write_file:
+#     json.dump(new_data, write_file, indent=5)
     # separators=(", ", ": "), sort_keys=True)

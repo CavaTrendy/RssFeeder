@@ -1,10 +1,10 @@
-# import os
-# import json
-# import rss
+import os
+import json
+import creation_rss
 from flask import render_template, request
-from rss import app
-from rss.models import Post
-from rss import db
+from rss.__int__ import app
+from models import Post
+from rss.__int__ import db
 
 
 @app.route("/")
@@ -14,9 +14,14 @@ def home():
 
 @app.route("/rss")
 def rss():
-    SITE_ROOT = os.path.realpath(os.path.dirname(__file__))
-    json_url = os.path.join(SITE_ROOT, "static", "feeds.json")
-    data = json.load(open(json_url))
+    # SITE_ROOT = os.path.realpath(os.path.dirname(__file__))
+    # json_url = os.path.join(SITE_ROOT, "static", "feeds.json")
+    # data = json.load(open(json_url))
+    # for data in creation_rss.rss_data:
+    #     db.session.add()
+    data = creation_rss.rss_data
+    db.session.add_all(data)
+    db.session.commit()
     page = request.args.get("page", 1, type=int)
     posts = data.paginate(page=page, per_page=5)
 

@@ -1,8 +1,6 @@
 from datetime import datetime, timedelta
 import time
 import feedparser
-import pytz
-import configparser
 
 urls = [
     "https://www.cryptohackers.party/feed/rss/",

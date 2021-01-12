@@ -1,9 +1,9 @@
-
 from rss.creation_rss import rss_data
 from flask import render_template, request
-from rss.__int__ import app
+from rss.__int__ import app, db
+from rss.models import Post
 
-from rss.__int__ import db
+data = rss_data
 
 
 @app.route("/")
@@ -18,9 +18,15 @@ def rss():
     # data = json.load(open(json_url))
     # for data in creation_rss.rss_data:
     #     db.session.add()
-    data = rss_data
-    db.session.add_all(data)
+    global data
+    for post in data:
+        post_dic = Post(source=post.get("source"), title=post.get("title"), date=post.get("date"),
+                        link=post.get("link"))
+
+    db.session.add(post_dic)
     db.session.commit()
+
+
     page = request.args.get("page", 1, type=int)
     posts = data.paginate(page=page, per_page=5)
 

@@ -109,7 +109,7 @@ for urls in links:
 # print(type(feeds))
 # a= json.dumps(feeds,indent= 4, separators=(", ", ": "), sort_keys=True)
 new_data = [{"source": s,"title": t, "description": e, "link": l,"date": d} for s, t, e, l, d in zip(feeds["source"], feeds["title"], feeds["description"], feeds["link"], feeds["date"])]
-
+#print(new_data)
 rss_data = json.dumps(new_data, indent=5)
 
 

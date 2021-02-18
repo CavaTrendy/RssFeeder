@@ -5,6 +5,7 @@ from rss.models import Post
 from flask_wtf import FlaskForm
 from wtforms import SubmitField, SelectField, RadioField, HiddenField, StringField, IntegerField, FloatField
 
+data = rss_data
 
 
 class AddRecord(FlaskForm):
@@ -37,7 +38,7 @@ def rss():
     #      post_dic = Post(source=form1.source.data, title=form1.title.data, date=form1.date.data, description=form1.description.data, link=form1.link.data)
     #      db.session.add(post_dic)
     #      db.session.commit()
-    for s, t, e, l, d in rss_data.items():
+    for s, t, e, l, d in data.items():
         print("d")
         new_data=Post(source = s,title = t, description = e, link = l , date = d)
         db.session.add(new_data)

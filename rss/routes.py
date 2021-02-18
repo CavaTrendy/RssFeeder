@@ -5,13 +5,14 @@ from rss.models import Post
 from flask_wtf import FlaskForm
 from wtforms import SubmitField, SelectField, RadioField, HiddenField, StringField, IntegerField, FloatField
 
-data = rss_data
+
 
 class AddRecord(FlaskForm):
     # id used only by update/edit
     id_field = HiddenField()
     source = StringField("source")
     title = StringField("title")
+    description = StringField("description")
     link = StringField("link")
     date = StringField("date")
     # updated - date - handled in the route function
@@ -31,13 +32,19 @@ def rss():
     # data = json.load(open(json_url))
     # for data in creation_rss.rss_data:
     #     db.session.add()
-    form1 = AddRecord()
-    if form1.validate_on_submit():
-         post_dic = Post(source=form1.source.data, title=form1.title.data, date=form1.date.data, link=form1.link.data)
-         db.session.add(post_dic)
-         db.session.commit()
+    # form1 = AddRecord()
+    # for d in data:
+    #      post_dic = Post(source=form1.source.data, title=form1.title.data, date=form1.date.data, description=form1.description.data, link=form1.link.data)
+    #      db.session.add(post_dic)
+    #      db.session.commit()
+    for s, t, e, l, d in rss_data.items():
+        print("d")
+        new_data=Post(source = s,title = t, description = e, link = l , date = d)
+        db.session.add(new_data)
+    db.session.commit()
+    print("data commited")
     flash('Your post has been updated!', 'success')
     # page = request.args.get("page", 1, type=int)
     # posts = data.paginate(page=page, per_page=5)
 
-    return render_template("rss.html", data=form1)
+    return render_template("rss.html", data=data)

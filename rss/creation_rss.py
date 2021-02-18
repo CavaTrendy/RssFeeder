@@ -113,7 +113,7 @@ new_data = [{"source": s,"title": t, "description": e, "link": l,"date": d} for 
 rss_data = json.dumps(new_data, indent=5)
 
 
-# # print(rss_data)
+# print(rss_data)
 # with open("./static/feeds.json", "w") as write_file:
 #     json.dump(new_data, write_file, indent=5)
 #     # separators=(", ", ": "), sort_keys=True)

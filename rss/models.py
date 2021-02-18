@@ -10,15 +10,14 @@ class Post(db.Model):
     description = db.Column(db.Text, nullable=False)
     link = db.Column(db.Text, nullable=False)
     date = db.Column(db.DateTime, nullable=False, default=datetime.utcnow)
-    updated = db.Column(db.String)
+    # updated = db.Column(db.String)
 
-    def __init__(self, source, title, description, link, date, updated):
+    def __init__(self, source, title, description, link, date):
         self.source = source
         self.title = title
         self.description = description
         self.link = link
         self.date = date
-        self.updated = updated
 
 
 

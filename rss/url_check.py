@@ -5,8 +5,8 @@ import feedparser
 urls = [
     # "https://www.cryptohackers.party/feed/rss/",
     "https://cointelegraph.com/rss",
-    # "https://cointelegraph.com/editors_pick_rss",
-    # "https://www.coindesk.com/feed/rss",
+    "https://cointelegraph.com/editors_pick_rss",
+    "https://www.coindesk.com/feed/rss",
     # "https://www.ccn.com/feed/",
     # "https://www.nakamotoinstitute.org/mempool/feed/",
     # "https://www.china-files.com/feed/rss",

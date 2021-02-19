@@ -1,11 +1,11 @@
-from rss.creation_rss import rss_data
+# from rss.creation_rss import rss_data
 from flask import render_template, flash
 from rss.__int__ import app, db
-from rss.models import Post
+# from rss.models import Post
 from flask_wtf import FlaskForm
 from wtforms import SubmitField, SelectField, RadioField, HiddenField, StringField, IntegerField, FloatField
-
-data = rss_data
+#
+# data = rss_data
 
 
 class AddRecord(FlaskForm):
@@ -38,12 +38,7 @@ def rss():
     #      post_dic = Post(source=form1.source.data, title=form1.title.data, date=form1.date.data, description=form1.description.data, link=form1.link.data)
     #      db.session.add(post_dic)
     #      db.session.commit()
-    for s, t, e, l, d in data.items():
-        print("d")
-        new_data=Post(source = s,title = t, description = e, link = l , date = d)
-        db.session.add(new_data)
-    db.session.commit()
-    print("data commited")
+
     flash('Your post has been updated!', 'success')
     # page = request.args.get("page", 1, type=int)
     # posts = data.paginate(page=page, per_page=5)

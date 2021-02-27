@@ -1,11 +1,11 @@
-# from rss.creation_rss import rss_data
+from rss.creation_rss import rss_decoded
 from flask import render_template, flash
 from rss.__int__ import app, db
-# from rss.models import Post
+from rss.models import Post
 from flask_wtf import FlaskForm
 from wtforms import SubmitField, SelectField, RadioField, HiddenField, StringField, IntegerField, FloatField
 #
-# data = rss_data
+data = rss_decoded
 
 
 class AddRecord(FlaskForm):
@@ -31,8 +31,11 @@ def rss():
     # SITE_ROOT = os.path.realpath(os.path.dirname(__file__))
     # json_url = os.path.join(SITE_ROOT, "static", "feeds.json")
     # data = json.load(open(json_url))
-    # for data in creation_rss.rss_data:
-    #     db.session.add()
+    for d in data:
+        post_dic = Post(source=d["source"], title=d["title"], description=d["description"], link=d["link"] )
+
+    db.session.add(post_dic)
+    db.session.commit()
     # form1 = AddRecord()
     # for d in data:
     #      post_dic = Post(source=form1.source.data, title=form1.title.data, date=form1.date.data, description=form1.description.data, link=form1.link.data)

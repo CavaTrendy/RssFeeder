@@ -1,9 +1,7 @@
 import feedparser
 import json
 from rss.url_check import urls
-from rss.models import Post
-from rss.__int__ import app, db
-from io import StringIO
+
 
 links = urls
 
@@ -73,7 +71,6 @@ links = urls
 #
 # a = feed()
 
-# print(a)
 feeds = {"source": [], "title": [], "description":[],"link": [], "date": []}
 for urls in links:
     print("Analyzing " + urls)
@@ -111,21 +108,8 @@ for urls in links:
 # print(type(feeds))
 # a= json.dumps(feeds,indent= 4, separators=(", ", ": "), sort_keys=True)
 new_data = [{"source": s,"title": t, "description": e, "link": l,"date": d} for s, t, e, l, d in zip(feeds["source"], feeds["title"], feeds["description"], feeds["link"], feeds["date"])]
-#print(new_data)
 rss_data = json.dumps(new_data, indent=5)
-print(rss_data)
 rss_decoded = json.loads(rss_data)
-for data in rss_decoded:
-    print(data)
-#     new_data = Post(source=data["source"])
-#     # , title=t, description=e, link=l, date=d)
-#     db.session.add(new_data)
-# db.session.commit()
-# print("data commited")
-# a = Post.query.all()
-# for u in a:
-#     print(u.source)
-# print(rss_data)
-# with open("./static/feeds.json", "w") as write_file:
-#     json.dump(new_data, write_file, indent=5)
-#     # separators=(", ", ": "), sort_keys=True)
+print(rss_decoded)
+
+

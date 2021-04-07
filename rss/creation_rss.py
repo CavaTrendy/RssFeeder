@@ -58,10 +58,10 @@ print(new_data)
 
 for d in new_data:
     post_dic = Post(source=d["source"], title=d["title"], description=d["description"], link=d["link"], date=d["date"])
-db.session.add(post_dic)
-db.session.commit()
+    db.session.add(post_dic)
+    db.session.commit()
 rss_posts = Post.query.all()
-print(rss_posts)
+print(Post.query.all())
 # rss_data = json.dumps(new_data, indent=5)
 # rss_decoded = json.loads(rss_data)
 # print(rss_decoded)

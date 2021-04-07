@@ -3,14 +3,12 @@ import time
 import feedparser
 
 urls = [
-    # "https://www.cryptohackers.party/feed/rss/",
-    "https://cointelegraph.com/rss",
-    "https://cointelegraph.com/editors_pick_rss",
+    "https://www.cointelegraph.com/rss",
     "https://www.coindesk.com/feed/rss",
-    # "https://www.ccn.com/feed/",
-    # "https://www.nakamotoinstitute.org/mempool/feed/",
-    # "https://www.china-files.com/feed/rss",
-    # "https://agfundernews.com/feed/rss",
+    "https://www.ccn.com/feed/",
+    "https://www.nakamotoinstitute.org/mempool/feed/",
+    "https://www.china-files.com/feed/rss",
+    "https://agfundernews.com/feed/rss",
 ]
 
 # #### NOT ALWAYS VALID ###

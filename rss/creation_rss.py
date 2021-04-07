@@ -1,77 +1,15 @@
+from rss.models import Post
+from rss.__int__ import db
 import feedparser
 import json
 from rss.url_check import urls
-
+import re
+from dateutil import parser, tz
 
 links = urls
 
-#######CLASS METHOD TRY##################
-# class RSSFeed:
-#     def __init__(self, urls):
-#         self.urls = urls
-#         print("Analyzing " + self.urls)
-#
-#     def feed(self):
-#         rss_feed = feedparser.parse(self.urls)
-#         feed_entries = rss_feed.entries
-#
-#         feeds = {"header": [], "link": [], "date": []}
-#         for entry in feed_entries:
-#             feeds["header"].append(entry.title)
-#             feeds["link"].append(entry.link)
-#             try:
-#                 feeds["date"].append(entry.published)
-#             except KeyError:
-#                 print("no pubDate")
-#         return feeds
-#
-#
-# topics_dict = {
-#     "source": [],
-#     "title": [],
-#     "date": [],
-#     "url": []
-# }
-# for link in links:
-#     rss_feed = feedparser.parse(link).channel.title
-#     topics_dict["source"].append(rss_feed)
-#     for values in RSSFeed(link).feed().values():
-#         # print(values)
-#         for keys in values:
-#             # print(keys)
-#             if "htt" in keys:
-#                 topics_dict["url"].append(keys)
-#             elif len(keys) == 31 and 21:
-#                 topics_dict["date"].append(keys)
-#             else:
-#                 topics_dict["title"].append(keys)
+feeds ={"source": [] , "title" : [], "description": [], "link": [], "date" : [] }
 
-#########DEF METHOD ##########
-# def feed():
-#     for urls in links:
-#         print("Analyzing " + urls)
-#         rss_feed = feedparser.parse(urls)
-#         feed_entries = rss_feed.entries
-#         feeds_articles = []
-#         sourcerex = re.match("https?://([A-Za-z_0-9.-]+).", urls)
-#         source = sourcerex[0]
-#
-#         for entry in feed_entries:
-#             header = entry.title
-#             link = entry.link
-#             try:
-#                 date = entry.published
-#             except KeyError:
-#                 print("no pubDate")
-#
-#             feeds = {"source": source, "header": header, "link": link, "date": date}
-#             feeds_articles.append(feeds)
-#     return feeds_articles
-#
-#
-# a = feed()
-
-feeds = {"source": [], "title": [], "description":[],"link": [], "date": []}
 for urls in links:
     print("Analyzing " + urls)
     rss_ = feedparser.parse(urls)
@@ -81,7 +19,6 @@ for urls in links:
     feed_entries = rss_feed.entries
     i = 0
     while i <= len(feed_entries):
-
         try:
             feeds["source"].append(feed_channel.title)
         except KeyError:
@@ -96,20 +33,37 @@ for urls in links:
         feeds["link"].append(entry.link)
         try:
             pub = entry.published
-            strip = pub.strip("+0000")
-            feeds["date"].append(strip)
+            dt = parser.parse(pub)
+            print()
+            feeds["date"].append(dt.astimezone(tz.tzutc()))
         except KeyError:
             print("no pubDate")
         try:
-            feeds["description"].append(entry.description)
+            description = entry.description
+            if entry.description_detail.type != 'text/html':
+                feeds["description"].append(description)
+            else:
+                sanitized_description = re.sub("<.*?>", "", description)
+                feeds["description"].append(sanitized_description)
         except:
-            print("boh")
+            feeds["description"].append("no Descirption")
 
-# print(type(feeds))
-# a= json.dumps(feeds,indent= 4, separators=(", ", ": "), sort_keys=True)
-new_data = [{"source": s,"title": t, "description": e, "link": l,"date": d} for s, t, e, l, d in zip(feeds["source"], feeds["title"], feeds["description"], feeds["link"], feeds["date"])]
-rss_data = json.dumps(new_data, indent=5)
-rss_decoded = json.loads(rss_data)
-print(rss_decoded)
+
+
+print (feeds)
+
+
+new_data = [{"source": s, "title": t, "description": e, "link": l, "date": d} for s, t, e, l, d in zip(feeds["source"], feeds["title"], feeds["description"], feeds["link"], feeds["date"])]
+print(new_data)
+
+for d in new_data:
+    post_dic = Post(source=d["source"], title=d["title"], description=d["description"], link=d["link"], date=d["date"])
+db.session.add(post_dic)
+db.session.commit()
+rss_posts = Post.query.all()
+print(rss_posts)
+# rss_data = json.dumps(new_data, indent=5)
+# rss_decoded = json.loads(rss_data)
+# print(rss_decoded)
 
 

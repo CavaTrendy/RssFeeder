@@ -1,7 +1,7 @@
-from rss.models import Post
+
 from rss.__int__ import db
+from rss.models import Post
 import feedparser
-import json
 from rss.url_check import urls
 import re
 from dateutil import parser, tz
@@ -58,10 +58,14 @@ print(new_data)
 
 for d in new_data:
     post_dic = Post(source=d["source"], title=d["title"], description=d["description"], link=d["link"], date=d["date"])
-    db.session.add(post_dic)
-    db.session.commit()
-rss_posts = Post.query.all()
-print(Post.query.all())
+    check = Post.query.filter_by(title = post_dic.title).first
+    if check:
+        print("Equal")
+    else:
+        db.session.add(post_dic)
+        db.session.commit()
+# rss_posts = Post.query.all()
+# print(Post.query.all())
 # rss_data = json.dumps(new_data, indent=5)
 # rss_decoded = json.loads(rss_data)
 # print(rss_decoded)
